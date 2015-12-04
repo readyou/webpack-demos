@@ -629,6 +629,7 @@ Another way of code splitting is using [bundle-loader](https://www.npmjs.com/pac
 ```javascript
 // main.js
 var load = require('bundle-loader!./a.js');
+//import load from 'bundle!./a.js'; //es6
 
 load(function(file) {
   document.open();
